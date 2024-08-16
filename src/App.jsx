@@ -6,7 +6,10 @@ import Signup from './Components/SignUp';
 import Edit from './Components/Edit';
 
 const cred=[
-  {roll:10101 , password:1} ,{ roll:10102 , password:2}, {roll:10103 , password:3} , {roll:10104 , password:4}
+  {roll:10101 , password:1} 
+  ,{ roll:10102 , password:2},
+   {roll:10103 , password:3} ,
+    {roll:10104 , password:4}
 ]
 
 function App() {

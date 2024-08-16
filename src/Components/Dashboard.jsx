@@ -1,9 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const studentInfo={
+const studentInfo1={
   name:"Daania qureshi",
   grade:"Engg",
   school:"VIT ",
+  scholarshipEligible:"false"
+}
+
+const studentInfo2 = {
+  name:"Iqra Sheikh Bilal Abbas",
+  grade:"Medical",
+  school:'IIIT',
+  scholarshipEligible:"false"
+
+}
+const studentInfo3 = {
+  name:"أنيرودا جوشي",
+  grade:"طبي",
+  school:'المعهد السعودي للطب',
+  scholarshipEligible:"true"
+}
+const studentInfo4 = {
+  name:"Shanna Ahmed",
+  grade:"Architecture",
+  school:'المعهد السعودي للهندسة',
   scholarshipEligible:"false"
 }
 
@@ -17,6 +37,13 @@ const Dashboard = () => {
   //   photo: 'path_to_student_photo.jpg' // Replace with actual photo path
   // };
 
+  const assignStudentInfo = () => {
+    const students = [studentInfo1, studentInfo2, studentInfo3 , studentInfo4];
+    const randomIndex = Math.floor(Math.random() * students.length);
+    return students[randomIndex];
+  };
+  const studentInfo = assignStudentInfo();
+
   return (
     <div className="flex flex-col h-screen justify-between">
       {/* Navbar */}
@@ -26,6 +53,7 @@ const Dashboard = () => {
           <li><Link to="/edit">Edit</Link></li>
           <li><a href="https://mahadbt.maharashtra.gov.in/login/login">FreeShip</a></li>
           <li><Link to="/mahadbt">MahaDBT</Link></li>
+          <li><Link to="/">Logout</Link></li>
         </ul>
       </nav>
 

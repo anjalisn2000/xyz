@@ -15,7 +15,7 @@ const Login = ({cred}) => {
     console.log(username)
    
 
-    if((username === '10101' && password==="1") || (username==="10102" && password==="2")){
+    if((username === '10101' && password==="1") || (username==="10102" && password==="2") || (username==="10103" && password==="3") || (username==="10104" && password==="4")){
 
       navigate('/dashboard')
     }else{
