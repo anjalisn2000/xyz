@@ -17,16 +17,16 @@ const studentInfo2 = {
 
 }
 const studentInfo3 = {
-  name:"أنيرودا جوشي",
-  grade:"طبي",
-  school:'المعهد السعودي للطب',
+  name:"Aniruddha joshi",
+  grade:"medicine",
+  school:'Medicinal COlege of Delhi',
   scholarshipEligible:"true",
   documents:[{name:'aadhar' , link:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgvDZG_FnS9_8wWIUv5vPZgMPsE2_QSRUhg&s"}]
 }
 const studentInfo4 = {
   name:"Shanna Ahmed",
   grade:"Architecture",
-  school:'المعهد السعودي للهندسة',
+  school:'Anjuman E Islam ',
   scholarshipEligible:"false",
   documents:[{name:'pancard' , link:"https://yourspj.wordpress.com/wp-content/uploads/2011/06/fake-pan-card_yourspj.jpg"}]
 }
